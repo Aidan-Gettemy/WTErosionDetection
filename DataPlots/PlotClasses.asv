@@ -13,7 +13,7 @@ M = readmatrix(rankingsID);close
 
 Names = In.Properties.VariableNames;
 
-for i = 1:20
+for i = 400:401
     a = i; b = i+1;
     figure
     pltname = "";
@@ -66,7 +66,7 @@ for i = 1:numel(pts(:,1))
     print('-dpng',pltsaveID)
 end
 %% Plot a scatter in 3D
-a = 13;b = 15; c1 = 16;
+a = 8;b = 15; c1 = 14;
 f = figure;
 f.Position = [100 100 800 600];
 scatter3(In,Names{M(a)},Names{M(b)},Names{M(c1)},'filled',"ColorVariable",616)
