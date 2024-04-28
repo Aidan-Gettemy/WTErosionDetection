@@ -1,0 +1,2 @@
+avg AUC train,avg AUC test
+1,0.6125
